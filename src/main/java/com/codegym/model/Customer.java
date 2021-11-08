@@ -34,6 +34,14 @@ public class Customer  {
     private String ward;
     private Date timeCheckin;
 
+    public Customer(String fullName, String indentity, String gender, String phone, Date timeCheckin) {
+        this.fullName = fullName;
+        this.indentity = indentity;
+        this.gender = gender;
+        this.phone = phone;
+        this.timeCheckin = timeCheckin;
+    }
+
     public Customer(String fullName, String indentity, String gender, String phone, String province_name, String district, String ward, Date timeCheckin) {
         this.fullName = fullName;
         this.indentity = indentity;

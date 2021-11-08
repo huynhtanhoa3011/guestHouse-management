@@ -16,7 +16,11 @@
             </div>
             <div class="col-md-3">
                 <label for="gender" class="form-label">Giới tính</label>
-                <input type="text" class="form-control" id="gender" name="gender">
+                <select class="form-control" id="gender" name="gender">
+                    <option>Nam</option>
+                    <option>Nữ</option>
+                </select>
+<!--                <input type="text" class="form-control" id="gender" name="gender">-->
             </div>
             <div class="col-md-3">
                 <label for="phone" class="form-label">Phone</label>
@@ -40,11 +44,21 @@
             </div>
             <div class="col-md-4">
                 <label for="room" class="form-label">Phòng</label>
-                <input type="text" class="form-select" id="room" name="room">
+                <select class="form-control" id="room" name="room">
+                    <option>Phòng đơn</option>
+                    <option>Phòng đôi</option>
+                </select>
+<!--                <input type="text" class="form-select" id="room" name="room">-->
             </div>
             <div class="col-md-4">
-                <label for="price" class="form-label">Giá</label>
-                <input type="number" class="form-select" id="price" name="price">
+                <label for="price" class="form-label">Giá/giờ</label>
+                <select class="form-control" id="price" name="price">
+                    <option>200.000 VNĐ</option>
+                    <option>300.000 VNĐ</option>
+                    <option>500.000 VNĐ</option>
+                    <option>1.000.000 VNĐ</option>
+                </select>
+<!--                <input type="number" class="form-select" id="price" name="price">-->
             </div>
             <div class="col-md-12">
                 <input type="button" id="btnCreateCustomer" class="btn btn-outline-primary" value="Create customer">

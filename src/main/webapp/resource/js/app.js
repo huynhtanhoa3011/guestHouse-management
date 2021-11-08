@@ -16,12 +16,12 @@ class App {
     static showSuspendedConfirmDialog() {
         return Swal.fire({
             icon: 'warning',
-            text: 'Are you sure to suspend the selected customer ?',
+            text: 'Bạn có chắc chắn muốn xoá thông tin khách hàng hay không ?',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, please suspend this client !',
-            cancelButtonText: 'Cancel',
+            confirmButtonText: 'Xoá',
+            cancelButtonText: 'Huỷ',
         })
     }
 
@@ -64,15 +64,15 @@ class App {
 
 
 class Customer {
-    constructor(id, fullName, indentity, gender,  phone, province_name, district, ward, timeCheckin) {
+    constructor(id, fullName, indentity, gender,  phone, province_id, district_id, ward_id, timeCheckin) {
         this.id = id;
         this.fullName = fullName;
         this.indentity = indentity;
         this.gender = gender;
         this.phone = phone;
-        this.province_name = province_name;
-        this.district = district;
-        this.ward = ward;
+        this.province_id = province_id;
+        this.district_id = district_id;
+        this.ward_id = ward_id;
         this.timeCheckin = timeCheckin;
     }
 }
