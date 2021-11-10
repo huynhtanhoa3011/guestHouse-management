@@ -190,8 +190,8 @@
         customer.phone = $("#phone").val();
         customer.timeCheckin = $("#date").val();
         customer.province_name = $("#province option:selected").text();
-        customer.district = $("#province_d option:selected").text();
-        customer.ward = $("#province_w option:selected").text();
+        customer.district_name = $("#province_d option:selected").text();
+        customer.ward_name = $("#province_w option:selected").text();
         delete customer.id;
         $.ajax({
             type: "POST",
@@ -244,8 +244,8 @@
         customer.phone = $("#upPhone").val();
         customer.timeCheckin = $("#upDate").val();
         customer.province_name = $("#upProvince option:selected").text();
-        customer.district = $("#upDistrict option:selected").text();
-        customer.ward = $("#upWard option:selected").text();
+        customer.district_name = $("#upDistrict option:selected").text();
+        customer.ward_name = $("#upWard option:selected").text();
 
         $.ajax({
             type: "POST",
@@ -258,7 +258,7 @@
         }).done((resp) => {
             customer = resp;
             let row = $("#orderItems tbody").find('#' + $("#currentRow").val());
-            let updated_row = $(template(customer.id, customer.fullName, customer.indentity, customer.gender, customer.phone, customer.timeCheckin, customer.province_name, customer.district, customer.ward));
+            let updated_row = $(template(customer.id, customer.fullName, customer.indentity, customer.gender, customer.phone, customer.timeCheckin, customer.province_name, customer.district_name, customer.ward_name));
             row.replaceWith(updated_row);
             $("#currentRow").val("");
             $('#frmUpdateCustomer')[0].reset();
