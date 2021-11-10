@@ -64,15 +64,18 @@ class App {
 
 
 class Customer {
-    constructor(id, fullName, indentity, gender,  phone, province_id, district_id, ward_id, timeCheckin) {
+    constructor(id, fullName, indentity, gender,  phone, province_id, province_name, district_id, district_name, ward_id, ward_name, timeCheckin) {
         this.id = id;
         this.fullName = fullName;
         this.indentity = indentity;
         this.gender = gender;
         this.phone = phone;
         this.province_id = province_id;
+        this.province_name = province_name;
         this.district_id = district_id;
+        this.district_name = district_name;
         this.ward_id = ward_id;
+        this.ward_name = ward_name;
         this.timeCheckin = timeCheckin;
     }
 }

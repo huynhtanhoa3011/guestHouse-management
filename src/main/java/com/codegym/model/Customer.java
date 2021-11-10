@@ -29,9 +29,12 @@ public class Customer  {
     private String indentity;
     private String gender;
     private String phone;
+    private String province_id;
     private String province_name;
-    private String district;
-    private String ward;
+    private String district_id;
+    private String district_name;
+    private String ward_id;
+    private String ward_name;
     private Date timeCheckin;
 
     public Customer(String fullName, String indentity, String gender, String phone, Date timeCheckin) {
@@ -42,14 +45,18 @@ public class Customer  {
         this.timeCheckin = timeCheckin;
     }
 
-    public Customer(String fullName, String indentity, String gender, String phone, String province_name, String district, String ward, Date timeCheckin) {
+    public Customer(String fullName, Room room, String indentity, String gender, String phone, String province_id, String province_name, String district_id, String district_name, String ward_id, String ward_name, Date timeCheckin) {
         this.fullName = fullName;
+        this.room = room;
         this.indentity = indentity;
         this.gender = gender;
         this.phone = phone;
+        this.province_id = province_id;
         this.province_name = province_name;
-        this.district = district;
-        this.ward = ward;
+        this.district_id = district_id;
+        this.district_name = district_name;
+        this.ward_id = ward_id;
+        this.ward_name = ward_name;
         this.timeCheckin = timeCheckin;
     }
 
@@ -58,12 +65,16 @@ public class Customer  {
         return "Customer{" +
                 "id=" + id +
                 ", fullName='" + fullName + '\'' +
+                ", room=" + room +
                 ", indentity='" + indentity + '\'' +
                 ", gender='" + gender + '\'' +
                 ", phone='" + phone + '\'' +
+                ", province_id='" + province_id + '\'' +
                 ", province_name='" + province_name + '\'' +
-                ", district='" + district + '\'' +
-                ", ward='" + ward + '\'' +
+                ", district_id='" + district_id + '\'' +
+                ", district_name='" + district_name + '\'' +
+                ", ward_id='" + ward_id + '\'' +
+                ", ward_name='" + ward_name + '\'' +
                 ", timeCheckin=" + timeCheckin +
                 '}';
     }
